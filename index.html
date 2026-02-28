@@ -2,13 +2,201 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Proyecto Básico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeOD</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="showView('home')">
+                <img src="imagenes/logoTexto.png" alt="Luceros el Ojo Daltónico" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showView('home')">-Inicio.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showView('about')">-Sobre mí.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showView('galery')">-Galería.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showView('contact')">-Contacto.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h1>Hola, basico</h1>
+    <!-- Vista Home -->
+    <div id="home-view" class="view">
+        <div class="container mt-5 pt-4">
+            <!-- Hero Section -->
+            <section class="hero-section text-center py-5 mb-5">
+                <h1 class="display-4 fw-bold mb-3">Bienvenidos</h1>
+                <p class="lead text-muted">Descubre nuestros mejores videos y contenido</p>
+            </section>
 
+            <!-- Videos Section -->
+            <section class="videos-section">
+                <h2 class="mb-4 text-center">Videos</h2>
+                <div class="row g-4" id="videos-container">
+                    <!-- Los videos se cargarán dinámicamente desde JavaScript -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Vista Sobre mí -->
+    <div id="about-view" class="view d-none">
+        <div class="container mt-5 pt-4">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-10">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="card-title mb-4">Sobre mí</h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <p class="card-text">
+                                Nunca pretendo ser soberbio, la idea es mostrar lo que tengo para ofrecerle a la banda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="mt-5 mb-4 text-center">Equipamiento</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://rvb-img.reverb.com/i/s--dB8iSnqx--/quality=medium-low,height=800,width=800,fit=contain/lxug3ye98y2lgz7wuqj4.jpg" class="card-img-top" alt="Equipo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo 1</h5>
+                            <p class="card-text">Descripción breve de la primera tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://media.rainpos.com/12983/21_K_Custom_Hybrid_Top.jpg" class="card-img-top" alt="Equipo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo 2</h5>
+                            <p class="card-text">Descripción breve de la segunda tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://rattleanddrum.com/cdn/shop/files/image_739fc7cd-4a2e-4005-90f3-bca29a3955b4.jpg?v=1736781963&width=1214" class="card-img-top" alt="Equipo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo 3</h5>
+                            <p class="card-text">Descripción breve de la tercera tarjeta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección Otros -->
+            <h2 class="mt-5 mb-4 text-center">Otros</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkQbDtw0U_D7R_3Ial2dk_xkV3arw1ecwRQ&s" class="card-img-top" alt="Trabajo a remoto">
+                        <div class="card-body">
+                            <h5 class="card-title">Trabajo a remoto</h5>
+                            <p class="card-text">Soy programador, laburo a remoto con mi notebook en horarios flex, (yo programé ésta página).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_683310-MLA106045909830_022026-O.webp" class="card-img-top" alt="Transporte propio">
+                        <div class="card-body">
+                            <h5 class="card-title">Transporte propio</h5>
+                            <p class="card-text">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="https://www.infoviajera.com/wp-content/uploads/2023/04/Tiempo-renovacion-pasaporte-Argentina-4.jpg" class="card-img-top" alt="Pasaporte al día">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasaporte al día</h5>
+                            <p class="card-text">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vista Contacto -->
+    <div id="contact-view" class="view d-none">
+        <div class="container mt-5 pt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="card-title mb-4">Contacto</h2>
+                            <p class="card-text mb-2"><strong>Celular:</strong> +54 9 11 2388-8374</p>
+                            <p class="card-text mb-2"><strong>Mail:</strong> cncastagnetto@hotmail.com</p>
+                            <p class="card-text mb-0"><strong>Instagram:</strong> @c.nko.c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vista Galería -->
+    <div id="galery-view" class="view d-none">
+        <div class="container mt-5 pt-4">
+            <h2 class="mb-4 text-center">Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large">
+                    <img src="https://via.placeholder.com/800x600?text=Foto+1" alt="Foto 1" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-medium">
+                    <img src="https://via.placeholder.com/600x400?text=Foto+2" alt="Foto 2" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-small">
+                    <img src="https://via.placeholder.com/400x400?text=Foto+3" alt="Foto 3" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-medium">
+                    <img src="https://via.placeholder.com/600x500?text=Foto+4" alt="Foto 4" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-small">
+                    <img src="https://via.placeholder.com/400x300?text=Foto+5" alt="Foto 5" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-large">
+                    <img src="https://via.placeholder.com/700x500?text=Foto+6" alt="Foto 6" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-medium">
+                    <img src="https://via.placeholder.com/500x600?text=Foto+7" alt="Foto 7" class="gallery-img">
+                </div>
+                <div class="gallery-item gallery-item-small">
+                    <img src="https://via.placeholder.com/400x400?text=Foto+8" alt="Foto 8" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
