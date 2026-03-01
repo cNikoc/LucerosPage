@@ -31,9 +31,6 @@
                         <a class="nav-link" href="#" onclick="showView('about')">-Sobre mí.</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="showView('galery')">-Galería.</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#" onclick="showView('contact')">-Contacto.</a>
                     </li>
                 </ul>
@@ -46,16 +43,17 @@
         <div class="container mt-5 pt-4">
             <!-- Hero Section -->
             <section class="hero-section text-center py-5 mb-5">
-                <h1 class="display-4 fw-bold mb-3">Bienvenidos</h1>
-                <p class="lead text-muted">Descubre nuestros mejores videos y contenido</p>
+                <h1 class="display-4 fw-bold mb-3">Buenasss</h1>
+                <p class="lead text-muted">Soy Nico, tengo 31 años y creo que soy el baterista perfecto para este momento de la banda.</p>
             </section>
 
             <!-- Videos Section -->
             <section class="videos-section">
-                <h2 class="mb-4 text-center">Videos</h2>
+                <h2 class="mb-4 text-center"></h2>
                 <div class="row g-4" id="videos-container">
                     <!-- Los videos se cargarán dinámicamente desde JavaScript -->
                 </div>
+                <h4 class="mt-5 text-center">Estoy preparando más temas...</h4>
             </section>
         </div>
     </div>
@@ -82,43 +80,31 @@
             <h2 class="mt-5 mb-4 text-center">Equipamiento</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://rvb-img.reverb.com/i/s--dB8iSnqx--/quality=medium-low,height=800,width=800,fit=contain/lxug3ye98y2lgz7wuqj4.jpg" class="card-img-top" alt="Equipo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Equipo 1</h5>
-                            <p class="card-text">Descripción breve de la primera tarjeta.</p>
-                        </div>
+                    <div class="card shadow-sm h-100 equipment-card">
+                        <img src="https://rvb-img.reverb.com/i/s--dB8iSnqx--/quality=medium-low,height=800,width=800,fit=contain/lxug3ye98y2lgz7wuqj4.jpg" class="card-img" alt="Equipo 1">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://media.rainpos.com/12983/21_K_Custom_Hybrid_Top.jpg" class="card-img-top" alt="Equipo 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Equipo 2</h5>
-                            <p class="card-text">Descripción breve de la segunda tarjeta.</p>
-                        </div>
+                    <div class="card shadow-sm h-100 equipment-card">
+                        <img src="https://media.rainpos.com/12983/21_K_Custom_Hybrid_Top.jpg" class="card-img" alt="Equipo 2">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="card shadow-sm h-100">
-                        <img src="https://rattleanddrum.com/cdn/shop/files/image_739fc7cd-4a2e-4005-90f3-bca29a3955b4.jpg?v=1736781963&width=1214" class="card-img-top" alt="Equipo 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Equipo 3</h5>
-                            <p class="card-text">Descripción breve de la tercera tarjeta.</p>
-                        </div>
+                    <div class="card shadow-sm h-100 equipment-card">
+                        <img src="https://rattleanddrum.com/cdn/shop/files/image_739fc7cd-4a2e-4005-90f3-bca29a3955b4.jpg?v=1736781963&width=1214" class="card-img" alt="Equipo 3">
                     </div>
                 </div>
             </div>
 
-            <!-- Sección Otros -->
-            <h2 class="mt-5 mb-4 text-center">Otros</h2>
+            <!-- Sección Disponibilidad  -->
+            <h2 class="mt-5 mb-4 text-center">Disponibilidad</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow-sm h-100">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkQbDtw0U_D7R_3Ial2dk_xkV3arw1ecwRQ&s" class="card-img-top" alt="Trabajo a remoto">
                         <div class="card-body">
-                            <h5 class="card-title">Trabajo a remoto</h5>
-                            <p class="card-text">Soy programador, laburo a remoto con mi notebook en horarios flex, (yo programé ésta página).</p>
+                            <h5 class="card-title">100% para la banda</h5>
+                            <p class="card-text">No tengo compromisos personales ni laborales estrictos. Soy programador (programé ésta página), laburo a remoto con mi notebook en horarios flex.</p>
                         </div>
                     </div>
                 </div>
@@ -141,57 +127,98 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Sección Fotos  -->
+            <h2 class="mt-5 mb-4 text-center">Fotos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/1.jpg" alt="Foto 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/1+.jpg" alt="Foto 1+" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/2.jpg" alt="Foto 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/3.jpg" alt="Foto 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/3+.jpg" alt="Foto 3+" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/4+.jpg" alt="Foto 4+" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/5.jpg" alt="Foto 5" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/6.jpg" alt="Foto 6" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/7.jpg" alt="Foto 7" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/8.jpg" alt="Foto 8" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/8+.jpg" alt="Foto 8+" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/9.jpg" alt="Foto 9" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/10+.jpg" alt="Foto 10+" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/11.jpg" alt="Foto 11" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/12.jpg" alt="Foto 12" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/13.jpg" alt="Foto 13" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/14.jpg" alt="Foto 14" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/15.jpg" alt="Foto 15" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/16.jpg" alt="Foto 16" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagenes/galeria/17.jpg" alt="Foto 17" class="gallery-img">
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Vista Contacto -->
     <div id="contact-view" class="view d-none">
         <div class="container mt-5 pt-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card shadow">
-                        <div class="card-body p-5">
-                            <h2 class="card-title mb-4">Contacto</h2>
-                            <p class="card-text mb-2"><strong>Celular:</strong> +54 9 11 2388-8374</p>
-                            <p class="card-text mb-2"><strong>Mail:</strong> cncastagnetto@hotmail.com</p>
-                            <p class="card-text mb-0"><strong>Instagram:</strong> @c.nko.c</p>
-                        </div>
-                    </div>
+            <section class="hero-section text-center py-5 mb-5">
+                <h1 class="display-4 fw-bold mb-4">Contacto</h1>
+                <div class="contact-item mb-3">
+                    <span class="lead"><strong>Celular:</strong> <span class="text-white">+54 9 11 2388-8374</span></span>
+                    <button class="btn btn-sm btn-outline-light ms-3" onclick="copyToClipboard('+54 9 11 2388-8374', this)" title="Copiar">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Vista Galería -->
-    <div id="galery-view" class="view d-none">
-        <div class="container mt-5 pt-4">
-            <h2 class="mb-4 text-center">Galería</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-item-large">
-                    <img src="https://via.placeholder.com/800x600?text=Foto+1" alt="Foto 1" class="gallery-img">
+                <div class="contact-item mb-3">
+                    <span class="lead"><strong>Mail:</strong> <span class="text-white">cncastagnetto@hotmail.com</span></span>
+                    <button class="btn btn-sm btn-outline-light ms-3" onclick="copyToClipboard('cncastagnetto@hotmail.com', this)" title="Copiar">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
                 </div>
-                <div class="gallery-item gallery-item-medium">
-                    <img src="https://via.placeholder.com/600x400?text=Foto+2" alt="Foto 2" class="gallery-img">
+                <div class="contact-item mb-0">
+                    <span class="lead"><strong>Instagram:</strong> <span class="text-white">@c.nko.c</span></span>
+                    <button class="btn btn-sm btn-outline-light ms-3" onclick="copyToClipboard('@c.nko.c', this)" title="Copiar">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
                 </div>
-                <div class="gallery-item gallery-item-small">
-                    <img src="https://via.placeholder.com/400x400?text=Foto+3" alt="Foto 3" class="gallery-img">
-                </div>
-                <div class="gallery-item gallery-item-medium">
-                    <img src="https://via.placeholder.com/600x500?text=Foto+4" alt="Foto 4" class="gallery-img">
-                </div>
-                <div class="gallery-item gallery-item-small">
-                    <img src="https://via.placeholder.com/400x300?text=Foto+5" alt="Foto 5" class="gallery-img">
-                </div>
-                <div class="gallery-item gallery-item-large">
-                    <img src="https://via.placeholder.com/700x500?text=Foto+6" alt="Foto 6" class="gallery-img">
-                </div>
-                <div class="gallery-item gallery-item-medium">
-                    <img src="https://via.placeholder.com/500x600?text=Foto+7" alt="Foto 7" class="gallery-img">
-                </div>
-                <div class="gallery-item gallery-item-small">
-                    <img src="https://via.placeholder.com/400x400?text=Foto+8" alt="Foto 8" class="gallery-img">
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 

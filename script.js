@@ -55,6 +55,11 @@ function showView(viewName) {
     // Actualizar navegación activa
     document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
+        // Agregar clase active al link correspondiente
+        const linkView = link.getAttribute('onclick');
+        if (linkView && linkView.includes(`showView('${viewName}')`)) {
+            link.classList.add('active');
+        }
     });
     
     // Scroll al inicio
@@ -91,6 +96,27 @@ function renderVideos() {
             </div>
         </div>
     `).join('');
+}
+
+// Función para copiar al portapapeles
+function copyToClipboard(text, button) {
+    navigator.clipboard.writeText(text).then(function() {
+        // Cambiar el icono temporalmente para indicar que se copió
+        const icon = button.querySelector('i');
+        const originalClass = icon.className;
+        icon.className = 'bi bi-check';
+        button.classList.add('btn-success');
+        button.classList.remove('btn-outline-light');
+        
+        setTimeout(function() {
+            icon.className = originalClass;
+            button.classList.remove('btn-success');
+            button.classList.add('btn-outline-light');
+        }, 2000);
+    }).catch(function(err) {
+        console.error('Error al copiar:', err);
+        alert('Error al copiar al portapapeles');
+    });
 }
 
 // Manejo del formulario de contacto
