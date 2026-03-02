@@ -213,7 +213,7 @@ body::before {
 .nav-link {
     transition: color 0.3s ease;
     color: #FF9B23 !important;
-    font-size: larger;
+    font-size: 20px;
     font-weight: 500 !important;
     position: relative;
 }
