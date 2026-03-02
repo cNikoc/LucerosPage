@@ -216,6 +216,20 @@ body::before {
     font-size: 20px;
     font-weight: 500 !important;
     position: relative;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 1.8px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
@@ -228,14 +242,7 @@ body::before {
 }
 
 .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    right: 0;
-    height: 1.8px;
     background-color: #ff9c236f;
-    border-radius: 2px;
 }
 
 /* Footer */
