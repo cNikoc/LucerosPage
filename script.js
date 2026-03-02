@@ -124,7 +124,7 @@ function copyToClipboard(text, button) {
     });
 }
 
-// Función para cambiar entre modo día y modo noche en la carta Sobre mí
+// Función para cambiar entre modo día y modo noche en la carta Quién soy?
 function toggleAboutCardTheme() {
     const card = document.getElementById('about-card');
     const toggle = document.getElementById('theme-toggle');
@@ -178,6 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar vista home por defecto
     showView('home');
     
-    // Cargar tema guardado de la carta Sobre mí
+    // Cargar tema guardado de la carta Quién soy?
     setTimeout(loadAboutCardTheme, 100);
 });

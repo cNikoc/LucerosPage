@@ -57,7 +57,7 @@ body::before {
 }
 
 .lead {
-    color: #FF9B23 !important;
+    color: #777 !important;
     font-weight: 500 !important;
 }
 
@@ -280,11 +280,11 @@ footer {
     animation: fadeIn 0.5s ease;
 }
 
-/* Tarjetas de Sobre mí */
+/* Tarjetas de Quién soy? */
 #about-view .row.justify-content-center .card {
     backdrop-filter: blur(10px);
     border: none;
-    border-radius: 10px;
+    border-radius: 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -292,7 +292,7 @@ footer {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Tema de la card principal de Sobre mí (solo #about-card) */
+/* Tema de la card principal de Quién soy? (solo #about-card) */
 #about-card {
     --about-card-bg: rgba(0, 0, 0, 0.95);
     --about-card-title: #ffffff;
@@ -313,6 +313,10 @@ footer {
     --about-card-bg: rgba(255, 255, 255, 0.95);
     --about-card-title: #000000;
     --about-card-text: #111111;
+    background-image: url('imagenes/recursos/papel.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Modo noche */
@@ -396,7 +400,7 @@ footer {
     border-radius: 10px;
 }
 
-/* Tarjetas de sobremidos - igual que Sobre mí */
+/* Tarjetas de sobremidos - igual que Quién soy? */
 #sobremidos-view .card {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -544,7 +548,7 @@ footer {
         font-size: 1rem;
     }
     
-    /* Tarjetas de Sobre mí en móvil */
+    /* Tarjetas de Quién soy? en móvil */
     #about-view .row.justify-content-center .card {
         margin-bottom: 1rem;
     }
@@ -750,7 +754,7 @@ footer {
     display: none !important;
 }
 
-/* Estilos para Contacto - igual que Sobre mí */
+/* Estilos para Contacto - igual que Quién soy? */
 #contact-view .card {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
