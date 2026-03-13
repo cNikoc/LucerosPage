@@ -547,6 +547,7 @@ footer {
     margin-bottom: 1rem;
     align-items: start;
     justify-items: center;
+    overflow: visible;
 }
 
 .gallery-item {
